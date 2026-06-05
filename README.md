@@ -19,6 +19,10 @@ A static informational website about rodent control in Lubbock, Texas. Built as 
 │   └── index.html
 ├── contact/
 │   └── index.html
+├── images/
+│   ├── pest-control-professional.jpg                # Featured image
+│   ├── home-inspection-entry-points.jpg             # Content image 1
+│   └── professional-sealing-cleanup.jpg             # Content image 2
 ├── css/
 │   └── style.css
 ├── sitemap.xml
@@ -26,6 +30,16 @@ A static informational website about rodent control in Lubbock, Texas. Built as 
 ├── .nojekyll
 └── README.md
 ```
+
+## Media in the Main Article
+
+The featured article includes:
+
+- **1 Featured image** at the top (pest control professional with PPE)
+- **2 Content images** in context — one in the inspection section, one in the exclusion section
+- **1 YouTube video embed** — a professional rodent inspection walkthrough (Smith's Pest Management)
+- All images have descriptive alt text and figcaptions for SEO and accessibility
+- YouTube embed is responsive (16:9) on all screen sizes
 
 ## Internal Linking Structure
 
@@ -41,7 +55,7 @@ Plus each article has a CTA box at the bottom directing to the main article.
 
 1. Create a new GitHub repository
 2. Push these files to the `main` branch
-3. Go to repository **Settings** → **Pages**
+3. Go to repository **Settings** → **Pages** (under "Code and automation")
 4. Under "Source", select **Deploy from a branch**
 5. Choose `main` branch and `/ (root)` folder
 6. Save — the site will be live at `https://<username>.github.io/<reponame>/` within a few minutes
@@ -52,11 +66,17 @@ For a custom domain, add a `CNAME` file with your domain name.
 
 After deploying, update the `<link rel="canonical">` URLs in each HTML file to match your actual deployed URL. Currently set to `https://lubbockrodentsealing.github.io/` placeholder.
 
+## Image Credits
+
+Featured and content images sourced from Unsplash (CDC photo library) — free for commercial use.
+
 ## Tech Notes
 
 - Pure static HTML/CSS — no build process, no dependencies
 - Mobile-responsive design
 - Sticky header navigation
+- Responsive YouTube video embed (16:9 aspect ratio)
 - SEO meta tags on every page
+- Lazy-loaded images for performance
 - Clean folder-based URLs (no .html extensions in production)
 - `.nojekyll` file present to prevent GitHub from processing as Jekyll
